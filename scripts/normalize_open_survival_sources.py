@@ -23,15 +23,15 @@ MIN_ASSISTANT_LEN = 50
 DATASET_ROW_CAPS = {
     # Large generic first-aid corpora can drown out the narrower
     # survival-first behavior we want on this benchmark.
-    "firstaidqa": 3500,
-    "medrescue": 3000,
+    "firstaidqa": 1500,
+    "medrescue": 1500,
 }
 
 DATASET_REPEAT_MULTIPLIERS = {
     # Small, high-alignment local datasets should appear more often than
     # their raw row counts suggest.
-    "survival_seed": 6,
-    "survival_priority_gapfix": 6,
+    "survival_seed": 12,
+    "survival_priority_gapfix": 12,
     "bushcraft_survival_gpt_oss_data_distilled": 3,
     "offline_practical_skills_qa_synthetic_filtered": 2,
 }
