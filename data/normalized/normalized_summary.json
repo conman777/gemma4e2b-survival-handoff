@@ -1,0 +1,135 @@
+{
+  "system_prompt": "You are a practical survival instructor. Give calm, prioritized, low-drama guidance. Focus on water, shelter, signaling, first aid, and risk reduction. State uncertainty clearly and avoid pretending a dangerous shortcut is safe.",
+  "artifacts": [
+    {
+      "dataset": "survival_seed",
+      "rows": 12,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\survival_seed_messages.jsonl"
+    },
+    {
+      "dataset": "survival_priority_gapfix",
+      "rows": 18,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\survival_priority_gapfix_messages.jsonl"
+    },
+    {
+      "dataset": "firstaidqa",
+      "rows": 3500,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\firstaidqa_messages.jsonl",
+      "pre_cap_rows": 5550
+    },
+    {
+      "dataset": "first_aid_dataset_belvisk",
+      "rows": 344,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\first_aid_dataset_belvisk_messages.jsonl"
+    },
+    {
+      "dataset": "crisis_data_v3_sft",
+      "rows": 1770,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\crisis_data_v3_sft_messages.jsonl"
+    },
+    {
+      "dataset": "offline_practical_skills_qa_synthetic_filtered",
+      "rows": 500,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\offline_practical_skills_filtered_messages.jsonl",
+      "topics": [
+        "Basic First Aid",
+        "Essential Knots",
+        "Wilderness Survival Basics"
+      ]
+    },
+    {
+      "dataset": "bushcraft_survival_gpt_oss_data_distilled",
+      "rows": 2586,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\bushcraft_survival_distilled_messages.jsonl"
+    },
+    {
+      "dataset": "first_aid_dataset_badri55",
+      "rows": 116,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\first_aid_dataset_badri55_messages.jsonl"
+    },
+    {
+      "dataset": "crisis_qa_eval",
+      "rows": 1971,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\crisis_qa_eval.jsonl"
+    },
+    {
+      "dataset": "medrescue",
+      "rows": 3000,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\medrescue_messages.jsonl",
+      "kept_sources": [
+        "extreme_firstaid_qa_dataset",
+        "first_aid_dataset",
+        "first_aid_qa_dataset",
+        "rescue_qa_dataset",
+        "synthetic_disaster_reports"
+      ],
+      "pre_cap_rows": 4832
+    },
+    {
+      "dataset": "us_army_fm_instruct",
+      "rows": 122,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\us_army_fm_instruct_messages.jsonl"
+    },
+    {
+      "dataset": "us_army_survival_sharegpt",
+      "rows": 381,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\us_army_survival_sharegpt_messages.jsonl"
+    },
+    {
+      "dataset": "medtext",
+      "rows": 519,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\medtext_messages.jsonl"
+    },
+    {
+      "dataset": "ems_knowledge",
+      "rows": 14528,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\ems_knowledge_messages.jsonl"
+    },
+    {
+      "dataset": "healthcare_qa",
+      "rows": 12,
+      "path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\healthcare_qa_messages.jsonl"
+    }
+  ],
+  "merged_training_candidates": [
+    "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\survival_seed_messages.jsonl",
+    "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\survival_priority_gapfix_messages.jsonl",
+    "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\firstaidqa_messages.jsonl",
+    "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\first_aid_dataset_belvisk_messages.jsonl",
+    "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\crisis_data_v3_sft_messages.jsonl",
+    "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\offline_practical_skills_filtered_messages.jsonl",
+    "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\bushcraft_survival_distilled_messages.jsonl",
+    "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\first_aid_dataset_badri55_messages.jsonl",
+    "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\medrescue_messages.jsonl",
+    "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\medtext_messages.jsonl",
+    "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\healthcare_qa_messages.jsonl"
+  ],
+  "training_datasets": [
+    "bushcraft_survival_gpt_oss_data_distilled",
+    "crisis_data_v3_sft",
+    "first_aid_dataset_badri55",
+    "first_aid_dataset_belvisk",
+    "firstaidqa",
+    "healthcare_qa",
+    "medrescue",
+    "medtext",
+    "offline_practical_skills_qa_synthetic_filtered",
+    "survival_priority_gapfix",
+    "survival_seed"
+  ],
+  "dataset_row_caps": {
+    "firstaidqa": 3500,
+    "medrescue": 3000
+  },
+  "dataset_repeat_multipliers": {
+    "survival_seed": 6,
+    "survival_priority_gapfix": 6,
+    "bushcraft_survival_gpt_oss_data_distilled": 3,
+    "offline_practical_skills_qa_synthetic_filtered": 2
+  },
+  "merged_training_path": "C:\\Users\\conor\\OneDrive\\Personal\\Documents\\fine-tuning\\gemma4e2b-survival\\data\\normalized\\survival_training_candidates_merged.jsonl",
+  "deduplication": {
+    "duplicates_removed": 210
+  },
+  "final_training_rows": 17989
+}

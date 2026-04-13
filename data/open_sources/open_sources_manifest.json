@@ -1,0 +1,382 @@
+{
+  "sources": [
+    {
+      "id": "firstaidqa",
+      "kind": "hf_dataset",
+      "dataset_id": "i-am-mushfiq/FirstAidQA",
+      "license": "CC-BY-4.0",
+      "status": "recommended",
+      "intended_use": "train",
+      "notes": "5.5k first-aid QA pairs for emergency response and offline-capable systems."
+    },
+    {
+      "id": "first_aid_dataset_belvisk",
+      "kind": "hf_dataset",
+      "dataset_id": "belvisk/First-Aid-Dataset",
+      "license": "MIT",
+      "status": "recommended",
+      "intended_use": "train_eval",
+      "notes": "Small first-aid QA set with explicit MIT license."
+    },
+    {
+      "id": "crisis_data_v3_sft",
+      "kind": "hf_dataset",
+      "dataset_id": "ianktoo/crisis-data-v3-sft",
+      "license": "CC-BY-4.0",
+      "status": "recommended",
+      "intended_use": "train",
+      "notes": "Instruction-tuning style crisis and preparedness data built from Ready.gov-derived material."
+    },
+    {
+      "id": "crisis_qa",
+      "kind": "hf_dataset",
+      "dataset_id": "AnneshaChowdhury/Crisis-QA",
+      "license": "MIT",
+      "status": "recommended",
+      "intended_use": "eval",
+      "notes": "Physics-aware crisis QA benchmark with wildfire and flood reasoning value."
+    },
+    {
+      "id": "offline_practical_skills_qa_synthetic",
+      "kind": "hf_dataset",
+      "dataset_id": "cahlen/offline-practical-skills-qa-synthetic",
+      "license": "CC-BY-SA-4.0",
+      "status": "optional",
+      "intended_use": "train",
+      "notes": "Synthetic practical-skills QA. Openly licensed, but lower-trust for safety-critical training."
+    },
+    {
+      "id": "bushcraft_survival_gpt_oss_data_distilled",
+      "kind": "hf_dataset",
+      "dataset_id": "hardrave/bushcraft_survival_gpt_oss_data_distilled",
+      "license": "MIT",
+      "status": "optional",
+      "intended_use": "train",
+      "notes": "Bushcraft and survival instruction-output dataset. Openly licensed but likely synthetic/distilled and needs filtering."
+    },
+    {
+      "id": "first_aid_dataset_badri55",
+      "kind": "hf_dataset",
+      "dataset_id": "badri55/First_aid__dataset",
+      "license": "CC0-1.0",
+      "status": "optional",
+      "intended_use": "train",
+      "notes": "Very small first-aid patterns-and-responses set. Openly licensed, useful only as supplemental data."
+    },
+    {
+      "id": "cot_reasoning_bushcraft_survival",
+      "kind": "hf_dataset",
+      "dataset_id": "mattwesney/CoT_Reasoning_Bushcraft_Survival",
+      "license": "MIT",
+      "status": "gated",
+      "intended_use": "review",
+      "notes": "Potentially valuable bushcraft/survival dataset, but gated on Hugging Face and requires authenticated access approval."
+    },
+    {
+      "id": "cot_reasoning_first_responders_triage",
+      "kind": "hf_dataset",
+      "dataset_id": "mattwesney/CoT_Reasoning_First_Responders_Triage_And_Emergencies",
+      "license": "MIT",
+      "status": "gated",
+      "intended_use": "review",
+      "notes": "Potentially valuable emergency-response dataset, but gated on Hugging Face and requires authenticated access approval."
+    },
+    {
+      "id": "cdc_safe_water_emergency",
+      "kind": "web_page",
+      "url": "https://www.cdc.gov/water-emergency/communication-resources/fact-sheet-use-safe-water-during-an-emergency.html",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Emergency water safety guidance."
+    },
+    {
+      "id": "cdc_hot_weather_heat_illness",
+      "kind": "web_page",
+      "url": "https://www.cdc.gov/natural-disasters/psa-toolkit/during-hot-weather.html",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Short heat-illness safety guidance."
+    },
+    {
+      "id": "cdc_heat_illness_warning_signs",
+      "kind": "web_page",
+      "url": "https://www.cdc.gov/natural-disasters/communication-resources/warning-signs-and-symptoms-of-heat-related-illness-flyer.html",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Heat illness signs and immediate response guidance."
+    },
+    {
+      "id": "cdc_prevent_hypothermia_frostbite",
+      "kind": "web_page",
+      "url": "https://www.cdc.gov/natural-disasters/psa-toolkit/preventing-hypothermia-and-frostbite.html",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Cold-weather prevention messaging."
+    },
+    {
+      "id": "cdc_winter_storm_safety",
+      "kind": "web_page",
+      "url": "https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Winter storm safety, hypothermia, and frostbite guidance."
+    },
+    {
+      "id": "nps_backcountry_health",
+      "kind": "web_page",
+      "url": "https://www.nps.gov/orgs/1735/backcountry.htm",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "NPS backcountry health and sanitation guidance."
+    },
+    {
+      "id": "nps_heat_illness",
+      "kind": "web_page",
+      "url": "https://www.nps.gov/articles/heat-illness.htm",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Outdoor heat-illness prevention for hikers and visitors."
+    },
+    {
+      "id": "nps_drinking_water_isle_royale",
+      "kind": "web_page",
+      "url": "https://www.nps.gov/isro/planyourvisit/drinking-water.htm",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Backcountry water treatment specifics."
+    },
+    {
+      "id": "nps_lightning_yosemite",
+      "kind": "web_page",
+      "url": "https://www.nps.gov/yose/planyourvisit/lightning.htm",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Lightning risk reduction in hiking and backcountry settings."
+    },
+    {
+      "id": "nws_safety_home",
+      "kind": "web_page",
+      "url": "https://www.weather.gov/safety",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "National Weather Service hazard safety index."
+    },
+    {
+      "id": "nws_lightning_safety",
+      "kind": "web_page",
+      "url": "https://www.weather.gov/safety/lightning",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Lightning safety guidance."
+    },
+    {
+      "id": "nws_heat_safety",
+      "kind": "web_page",
+      "url": "https://www.weather.gov/safety/heat",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Heat safety guidance."
+    },
+    {
+      "id": "nws_flood_safety",
+      "kind": "web_page",
+      "url": "https://www.weather.gov/safety/flood",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Flood safety guidance."
+    },
+    {
+      "id": "nws_cold_safety",
+      "kind": "web_page",
+      "url": "https://www.weather.gov/safety/cold",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Cold-weather safety guidance."
+    },
+    {
+      "id": "ready_kit",
+      "kind": "web_page",
+      "url": "https://www.ready.gov/kit",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Emergency supply kit guidance."
+    },
+    {
+      "id": "ready_plan",
+      "kind": "web_page",
+      "url": "https://www.ready.gov/plan",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Family emergency planning guidance."
+    },
+    {
+      "id": "ready_evacuation",
+      "kind": "web_page",
+      "url": "https://www.ready.gov/evacuation",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Evacuation planning and execution guidance."
+    },
+    {
+      "id": "ready_shelter",
+      "kind": "web_page",
+      "url": "https://www.ready.gov/shelter",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Shelter and shelter-in-place guidance."
+    },
+    {
+      "id": "ready_wildfires",
+      "kind": "web_page",
+      "url": "https://www.ready.gov/wildfires",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Wildfire preparedness and response guidance."
+    },
+    {
+      "id": "ready_floods",
+      "kind": "web_page",
+      "url": "https://www.ready.gov/floods",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Flood preparedness and response guidance."
+    },
+    {
+      "id": "ready_winter_weather",
+      "kind": "web_page",
+      "url": "https://www.ready.gov/winter-weather",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Winter weather preparedness guidance."
+    },
+    {
+      "id": "ready_power_outages",
+      "kind": "web_page",
+      "url": "https://www.ready.gov/power-outages",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "Power outage guidance."
+    },
+    {
+      "id": "ready_are_you_ready_guide",
+      "kind": "web_page",
+      "url": "https://www.ready.gov/sites/default/files/2021-11/are-you-ready-guide.pdf",
+      "license": "U.S. government work; generally public domain unless otherwise noted",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "FEMA/Ready.gov preparedness guide PDF with hazard sections including heat, flood, wildfire, winter, and emergencies."
+    },
+    {
+      "id": "medrescue",
+      "kind": "hf_dataset",
+      "dataset_id": "ericrisco/medrescue",
+      "license": "CC-BY-4.0",
+      "status": "recommended",
+      "intended_use": "train",
+      "notes": "86K+ emergency medicine and rescue QA rows. 12 sub-sources including extreme first aid, rescue QA, synthetic disaster reports, medication QA, symptom-to-diagnosis. Built from WHO, ICRC, US Military, FEMA, and Canadian government medical PDFs."
+    },
+    {
+      "id": "us_army_fm_instruct",
+      "kind": "hf_dataset",
+      "dataset_id": "Heralax/us-army-fm-instruct",
+      "license": "Apache-2.0",
+      "status": "recommended",
+      "intended_use": "train",
+      "notes": "7K multi-turn instruction pairs from US Army Field Manuals covering CASEVAC/MEDEVAC, physical fitness, field operations, engineer support. Includes negative examples (misinformed premises). Needs topic filtering for survival/medical relevance."
+    },
+    {
+      "id": "us_army_survival_sharegpt",
+      "kind": "hf_dataset",
+      "dataset_id": "AquaV/US-Army-Survival-Sharegpt",
+      "license": "No license declared (source material is public domain US Army FM 21-76)",
+      "status": "optional",
+      "intended_use": "train",
+      "notes": "382 ShareGPT-format conversations generated from US Army survival manual content. Covers first aid, wilderness skills, emergency protocols."
+    },
+    {
+      "id": "medtext",
+      "kind": "hf_dataset",
+      "dataset_id": "BI55/MedText",
+      "license": "CC-BY-4.0",
+      "status": "recommended",
+      "intended_use": "train",
+      "notes": "1.4K doctor-validated clinical cases covering 100+ diseases and 30 most common injuries. Includes fractures, burns, concussions, lacerations, head/chest injuries. GPT-4 generated but validated by 3 physicians."
+    },
+    {
+      "id": "ems_knowledge",
+      "kind": "hf_dataset",
+      "dataset_id": "Xueren/EMS-Knowledge",
+      "license": "MIT",
+      "status": "optional",
+      "intended_use": "train",
+      "notes": "16.8K text chunks from EMS reference materials. Covers airway management, trauma, assessment, cardiovascular, pediatrics, pharmacology. NOT QA format — raw knowledge chunks that need conversion to instruction pairs."
+    },
+    {
+      "id": "healthcare_qa",
+      "kind": "hf_dataset",
+      "dataset_id": "adrianf12/healthcare-qa-dataset",
+      "license": "MIT",
+      "status": "optional",
+      "intended_use": "train",
+      "notes": "51 curated healthcare QA pairs including CPR instructions, stroke recognition (FAST), concussion assessment, blood clot warning signs. Very small but high quality."
+    },
+    {
+      "id": "disaster_response_messages",
+      "kind": "hf_dataset",
+      "dataset_id": "community-datasets/disaster_response_messages",
+      "license": "CC-BY-SA-4.0",
+      "status": "optional",
+      "intended_use": "reference",
+      "notes": "26K real messages from Haiti earthquake, Chile earthquake, Pakistan floods, Hurricane Sandy. Labeled for search_and_rescue, medical_help, shelter, water, food. Classification data — would need reformatting for SFT."
+    },
+    {
+      "id": "fema_cert_manual",
+      "kind": "web_page",
+      "url": "https://www.ready.gov/sites/default/files/2019.CERT_.Basic_.PM_FINAL_508c.pdf",
+      "license": "U.S. government work; public domain",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "FEMA CERT Basic Training Manual. Covers disaster preparedness, fire safety, light search and rescue, triage (START method), disaster medical operations, disaster psychology."
+    },
+    {
+      "id": "fm21_76_army_survival",
+      "kind": "web_page",
+      "url": "https://archive.org/download/Fm21-76SurvivalManual/FM21-76_SurvivalManual.pdf",
+      "license": "U.S. government work; public domain",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "FM 21-76 US Army Survival Manual PDF from Internet Archive. Covers shelter, water, food, fire, navigation, signaling, survival psychology, climate-specific survival. Canonical survival reference."
+    },
+    {
+      "id": "fm4_25_11_army_first_aid",
+      "kind": "web_page",
+      "url": "https://irp.fas.org/doddir/milmed/first.pdf",
+      "license": "U.S. government work; public domain",
+      "status": "recommended",
+      "intended_use": "reference",
+      "notes": "FM 4-25.11 US Army First Aid manual. Covers bleeding control, fractures, burns, shock, CPR, environmental injuries, bites/stings."
+    }
+  ]
+}
